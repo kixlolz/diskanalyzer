@@ -1,0 +1,16 @@
+[project]
+name = "diskanalyzer"
+version = "0.1.0"
+description = "Interactive disk usage analyzer with TUI"
+requires-python = ">=3.9"
+dependencies = ["textual>=0.47"]
+
+[project.scripts]
+diskanalyzer = "diskanalyzer.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["diskanalyzer"]
